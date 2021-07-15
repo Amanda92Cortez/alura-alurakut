@@ -8,7 +8,7 @@ import {ProfileRelationsBoxWrapper} from '../src/components/ProfileRelations';
 
 function ProfileSidebar(propriedades){
   return(
-    <Box as="asides">
+    <Box>
       <img src={`https://github.com/${propriedades.githubUser}.png`} style={{borderRadius: '8px'}}/>
       <hr/>
       <p>
@@ -39,6 +39,7 @@ export default function Home() {
     'rafaballerini',
     'marcobrunodev',
     'felipefialho',
+
   ]
 
   return (
