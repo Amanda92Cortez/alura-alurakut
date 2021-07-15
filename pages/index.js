@@ -8,7 +8,7 @@ import {ProfileRelationsBoxWrapper} from '../src/components/ProfileRelations';
 
 function ProfileSidebar(propriedades){
   return(
-    <Box>
+    <Box as="aside">
       <img src={`https://github.com/${propriedades.githubUser}.png`} style={{borderRadius: '8px'}}/>
       <hr/>
       <p>
@@ -21,6 +21,31 @@ function ProfileSidebar(propriedades){
     </Box>
     )
 }
+
+
+function ProfileRelationsBox(propriedades) {
+  return (
+    <ProfileRelationsBoxWrapper>
+      <h2 className="smallTitle">
+        {propriedades.title} ({propriedades.items.length})
+      </h2>
+      <ul>
+        {/* {seguidores.map((itemAtual) => {
+          return (
+            <li key={itemAtual}>
+              <a href={`https://github.com/${itemAtual}.png`}>
+                <img src={itemAtual.image} />
+                <span>{itemAtual.title}</span>
+              </a>
+            </li>
+          )
+        })} */}
+      </ul>
+    </ProfileRelationsBoxWrapper>
+  )
+}
+
+
 
 export default function Home() {
   
@@ -39,8 +64,23 @@ export default function Home() {
     'rafaballerini',
     'marcobrunodev',
     'felipefialho',
-
   ]
+
+  // 0 - Pegar array 
+  
+  const [seguidores, setSeguidores] = React.useState([]);
+  React.useEffect(function(){
+    const seguidores = fetch('https://api.github.com/users/amanda92cortez/followers')
+    .then(function(respostaDoServidor){
+      return respostaDoServidor.json();
+    })
+    .then(function(respostaCompleta){
+      setSeguidores(respostaCompleta);
+    })
+  }, [])
+
+  // 1- Criar um box que vai ter um map, baseado no itens do array que pegamos no Github
+
 
   return (
     <>
@@ -100,6 +140,28 @@ export default function Home() {
       </div>
 
       <div className="profileRelationsArea" style={{gridArea: 'profileRelationsArea' }}>
+        {/* Seguidores */ }
+        <ProfileRelationsBox title="Seguidores" items={seguidores} />
+        
+        {/* Comunidades */ }
+        <ProfileRelationsBoxWrapper>
+          <h2 className="smallTitle">
+            Comunidade ({comunidades.length})
+          </h2>
+          <ul>
+              {comunidades.map((itemAtual) => {
+                return(
+                  <li key={itemAtual.id}>
+                    <a href={`/users/${itemAtual.title}`}> 
+                      <img src={itemAtual.image} />
+                      <span>{itemAtual.title}</span>
+                    </a>
+                  </li>
+                )
+              })}
+            </ul>
+        </ProfileRelationsBoxWrapper>
+
         {/* Pessoas da Comunidade*/}
         <ProfileRelationsBoxWrapper>
           <h2 className="smallTitle">
@@ -120,24 +182,7 @@ export default function Home() {
           </ul>
         </ProfileRelationsBoxWrapper>
 
-        {/* Comunidades */ }
-        <ProfileRelationsBoxWrapper>
-          <h2 className="smallTitle">
-            Comunidade ({comunidades.length})
-          </h2>
-          <ul>
-              {comunidades.map((itemAtual) => {
-                return(
-                  <li key={itemAtual.id}>
-                    <a href={`/users/${itemAtual.title}`}> 
-                      <img src={itemAtual.image} />
-                      <span>{itemAtual.title}</span>
-                    </a>
-                  </li>
-                )
-              })}
-            </ul>
-        </ProfileRelationsBoxWrapper>
+        
 
       </div>
     </MainGrid>
