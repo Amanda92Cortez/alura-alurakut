@@ -26,7 +26,7 @@ export default function Home() {
   
   const githubUser = 'Amanda92Cortez'
   const [comunidades, setComunidades] = React.useState([{
-    id: '123456',
+    id: '909090',
     title: 'Eu odeio acordar cedo',
     image: 'https://alurakut.vercel.app/capa-comunidade-01.jpg'
   }]);
