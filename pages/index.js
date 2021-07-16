@@ -90,7 +90,7 @@ export default function Home() {
   
   const [seguidores, setSeguidores] = React.useState([]);
   React.useEffect(function(){
-    // GET
+    // GET ..
     const seguidores = fetch('https://api.github.com/users/amanda92cortez/followers')
     .then(function(respostaDoServidor){
       return respostaDoServidor.json();
