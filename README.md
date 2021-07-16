@@ -2,7 +2,7 @@ Alurakut ✨
 
 Projeto desenvolvido durante a 3ª edição da Imersão React promovida pela Alura do ano 2021.
 
-Link (Versel): https://alurakut-base-gilt.vercel.app/
+Link (Versel): https://alurakut-jqbnfz294-amanda92cortez.vercel.app/login
 
 ![image](https://user-images.githubusercontent.com/19363871/125538019-800acebc-8889-4a8d-84d9-48a0980fb6f9.png)
 
