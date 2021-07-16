@@ -1,6 +1,8 @@
 import React from 'react';
 import { makePublicRouterInstance } from 'next/dist/client/router'
 import styled from 'styled-components'
+import nookies from 'nookies';
+import jwt from 'jsonwebtoken';
 import MainGrid from '../src/components/MainGrid'
 import Box from '../src/components/Box'
 import { AlurakutMenu, AlurakutProfileSidebarMenuDefault, OrkutNostalgicIconSet } from '../src/lib/AlurakutCommons';
@@ -11,7 +13,8 @@ function ProfileSidebar(propriedades){
     <Box as="aside">
       <img src={`https://github.com/${propriedades.githubUser}.png`} style={{borderRadius: '8px'}}/>
       <hr/>
-      <p>
+      
+	  <p>
         <a className="boxLink" href={`https://github.com/${propriedades.githubUser}`}>
           @{propriedades.githubUser}
         </a>
@@ -21,29 +24,6 @@ function ProfileSidebar(propriedades){
     </Box>
     )
 }
-
-
-// function ProfileRelationsBox(propriedades) {
-//   return (
-//     <ProfileRelationsBoxWrapper>
-//       <h2 className="smallTitle">
-//         {propriedades.title} ({propriedades.items.length})
-//       </h2>
-//       <ul>
-//         {seguidores.map((itemAtual) => {
-//           return (
-//             <li key={itemAtual.id}>
-//               <a href={`https://github.com/${itemAtual.login}`}>
-//                 <img src={itemAtual.avatar_url} />
-//                 <span>{itemAtual.login}</span>
-//               </a>
-//             </li>
-//           )
-//         })}
-//       </ul>
-//     </ProfileRelationsBoxWrapper>
-//   )
-// }
 
 function ProfileRelationsBox(propriedades) {
 	const listaSeguidores = propriedades.items.slice(0, 6)
@@ -71,9 +51,9 @@ function ProfileRelationsBox(propriedades) {
 }
 
 
-export default function Home() {
+export default function Home(props) {
   
-  const githubUser = 'amanda92cortez'
+  const usuarioAleatorio = props.githubUser;
   const [comunidades, setComunidades] = React.useState([]);
   // const comunidades = comunidades[0];
   // const alteradorDeComunidades = comunidades[1];
@@ -136,13 +116,13 @@ export default function Home() {
     <AlurakutMenu/>
     <MainGrid>
       <div className="profileArea" style={{gridArea: 'profileArea' }}>
-       <ProfileSidebar githubUser={githubUser}/>
+       <ProfileSidebar githubUser={usuarioAleatorio}/>
       </div>
       
       <div className="welcomeArea" style={{ gridArea: 'welcomeArea' }}>
           <Box>
             <h1 className="title">
-              Bem vindo(a) 
+              Bem vindo(a), {usuarioAleatorio}
             </h1>
 
             <OrkutNostalgicIconSet />
@@ -160,7 +140,7 @@ export default function Home() {
               const comunidade = {
                 title: dadosDoForm.get('title'),
                 imageUrl: dadosDoForm.get('image'),
-                creatorSlug: githubUser,
+                creatorSlug: usuarioAleatorio,
               }
 
               fetch('/api/comunidades', {
@@ -245,11 +225,37 @@ export default function Home() {
             })}
           </ul>
         </ProfileRelationsBoxWrapper>
-
-        
-
       </div>
     </MainGrid>
     </>
   )
+}
+
+export async function getServerSideProps(context) {
+  const cookies = nookies.get(context)
+  const token = cookies.USER_TOKEN;
+
+  const { isAuthenticated } = await fetch('https://alurakut.vercel.app/api/auth', {
+    headers: {
+        Authorization: token
+      }
+  })
+  .then((resposta) => resposta.json())
+
+  if(isAuthenticated) {
+    return {
+      redirect: {
+        destination: '/login',
+        permanent: false,
+      }
+    }
+  }
+
+  const { githubUser } = jwt.decode(token);
+  
+  return {
+    props: {
+      githubUser
+    }, // will be passed to the page component as props
+  }
 }

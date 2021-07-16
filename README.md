@@ -4,12 +4,17 @@ Projeto desenvolvido durante a 3ª edição da Imersão React promovida pela Alu
 
 Link (Versel): https://alurakut-base-gilt.vercel.app/
 
-![image](https://user-images.githubusercontent.com/19363871/125972909-db6e8c4b-55c4-4e78-bd2c-ac672277b25d.png)
+![image](https://user-images.githubusercontent.com/19363871/125538019-800acebc-8889-4a8d-84d9-48a0980fb6f9.png)
+
+
+Página inicial da Alurakut
+Tecnologias
+
+    React
+    Next.JS
+    styled-components
 
 Etapas: 
 
     Aula 1: Components com React, Styled Components e NextJS
     Aula 2: React, State e o primeiro Formulário
-    Aula 3: Hooks no React.useEffect e protocolo HTTP
-    Aula 4: Requisição com GraphQL, BFF e AJAX!
-    Aula 5: Sistema de Login: o desafio final
