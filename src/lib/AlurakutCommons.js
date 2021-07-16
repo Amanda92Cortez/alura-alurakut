@@ -1,4 +1,5 @@
 import React from 'react';
+import nookies from 'nookies';
 import styled, { css } from 'styled-components';
 import NextLink from 'next/link';
 
@@ -24,7 +25,9 @@ export function AlurakutMenu({ githubUser }) {
   return (
     <AlurakutMenu.Wrapper isMenuOpen={isMenuOpen}>
       <div className="container">
-        <AlurakutMenu.Logo src={`${BASE_URL}/logo.svg`} />
+        <a href="\">
+          {<AlurakutMenu.Logo src={`${BASE_URL}/logo.svg`} />}
+        </a>
 
         <nav style={{ flex: 1 }}>
           {[{ name: 'Inicio', slug: '/'}, {name: 'Amigos', slug: '/amigos'}, {name: 'Comunidades', slug: '/comunidades'}].map((menuItem) => (
@@ -35,11 +38,13 @@ export function AlurakutMenu({ githubUser }) {
         </nav>
 
         <nav>
-          <a href={`/logout`}>
+          <a href={`/login`} onClick={(e) => {
+            nookies.destroy(null, 'USER');
+          }}>
             Sair
           </a>
-          <div>
-            <input placeholder="Pesquisar no Orkut" />
+          <div className="d-flex">
+            <input placeholder="Pesquisar no Alurakut" />
           </div>
         </nav>
 
