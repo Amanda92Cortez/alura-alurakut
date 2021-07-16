@@ -4,7 +4,7 @@ Projeto desenvolvido durante a 3ª edição da Imersão React promovida pela Alu
 
 Link (Versel): https://alurakut-base-gilt.vercel.app/
 
-![image](https://user-images.githubusercontent.com/19363871/125538019-800acebc-8889-4a8d-84d9-48a0980fb6f9.png)
+![image](https://user-images.githubusercontent.com/19363871/125972909-db6e8c4b-55c4-4e78-bd2c-ac672277b25d.png)
 
 
 Página inicial da Alurakut
