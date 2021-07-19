@@ -242,6 +242,7 @@ export async function getServerSideProps(context) {
   })
   .then((resposta) => resposta.json())
 
+<<<<<<< HEAD
   // if(isAuthenticated) {
   //   return {
   //     redirect: {
@@ -250,6 +251,16 @@ export async function getServerSideProps(context) {
   //     }
   //   }
   // }
+=======
+   if(!isAuthenticated) {
+     return {
+       redirect: {
+         destination: '/login',
+         permanent: false,
+       }
+     }
+   }
+>>>>>>> ad1a0879c173aafc5c099574361731686811d86e
 
   const { githubUser } = jwt.decode(token);
   
@@ -258,4 +269,8 @@ export async function getServerSideProps(context) {
       githubUser
     }, // will be passed to the page component as props
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ad1a0879c173aafc5c099574361731686811d86e
