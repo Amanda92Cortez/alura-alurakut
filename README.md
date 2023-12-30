@@ -1,20 +1,23 @@
-Alurakut ✨
+<h1>Alurakut Alura</h1>
 
-Projeto desenvolvido durante a 3ª edição da Imersão React promovida pela Alura do ano 2021.
+<p align="center">
+   <img src="http://img.shields.io/static/v1?label=STATUS&message=FINALIZADA&color=RED&style=for-the-badge" #vitrinedev/>
+</p>
 
-Link (Versel): https://alurakut-acm92.vercel.app/login
+# :pushpin: Sobre do projeto
+- `Observação` Projeto desenvolvido durante a 3ª edição da Imersão React promovida pela Alura do ano 2021
 
+# :hammer: Funcionalidades do projeto
+- `Funcionalidade` Alurakut pra entrar conta GitHub
+
+# :bookmark_tabs: Tecnologias
+![React](https://img.shields.io/badge/React-414141?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
+![NestJs](https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white)
+![VSCode](https://img.shields.io/badge/-VSCode-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+
+## 🛠️ Abrir e rodar o projeto
+- `Baixar projeto` git clone https://github.com/Amanda92Cortez/alura-alurakut.git
+
+## 📚Telas/Vídeos
 ![image](https://user-images.githubusercontent.com/19363871/125538019-800acebc-8889-4a8d-84d9-48a0980fb6f9.png)
-
-
-Página inicial da Alurakut
-Tecnologias
-
-    React
-    Next.JS
-    styled-components
-
-Etapas: 
-
-    Aula 1: Components com React, Styled Components e NextJS
-    Aula 2: React, State e o primeiro Formulário
