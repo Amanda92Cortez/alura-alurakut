@@ -3,7 +3,6 @@
 </p>
 
 <h1>Alurakut</h1>
-</br></br>
 
 ![Alurakut](https://github.com/Amanda92Cortez/alura-alurakut/assets/19363871/8b24f57d-0938-4c9d-aca9-e83f7633ce58)
 
