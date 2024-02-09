@@ -9,7 +9,7 @@
 - ` Observação ` Projeto desenvolvido durante a 3ª edição da Imersão React promovida pela Alura do ano 2021
 
 # :hammer: Funcionalidades do projeto
-- ` Funcionalidade ` Alurakut pra entrar conta GitHub
+- ` Observação ` Alurakut pra entrar conta GitHub
 
 # :bookmark_tabs: Tecnologias
 ![React](https://img.shields.io/badge/React-414141?style=for-the-badge&logo=react&logoColor=61DAFB)
