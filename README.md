@@ -1,7 +1,7 @@
 </br>
 <p align="center"> <img src="http://img.shields.io/static/v1?label=STATUS_GERAL&message=RETORNAR_ASSUNTO&color=RED&style=for-the-badge" #vitrinedev/> </p>
 
-# ALURAKUT
+# Alurakut
 App apresenta o clone de Orkut.
 
 ## 🔨 Funcionalidades do projeto
