@@ -1,6 +1,6 @@
-<p align="center">
-   <img src="http://img.shields.io/static/v1?label=STATUS_GERAL&message=FINALIZADA&color=RED&style=for-the-badge" #vitrinedev/>
-</p>
+<p align="center"> <img src="http://img.shields.io/static/v1?label=STATUS_GERAL&message=FINALIZADA&color=RED&style=for-the-badge" #vitrinedev/> </p>
+</br>
+<p align="center"> <img src="http://img.shields.io/static/v1?label=OBSERVAÇÃO&message=REVER_VIDEO_+_AJUSTE&color=RED&style=for-the-badge" #vitrinedev/> </p>
 
 <h1>Alurakut - Alura</h1>
 
