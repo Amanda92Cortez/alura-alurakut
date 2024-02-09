@@ -1,5 +1,5 @@
 </br>
-<p align="center"> <img src="http://img.shields.io/static/v1?label=STATUS_GERAL&message=FINALIZADA&color=RED&style=for-the-badge" #vitrinedev/> </p>
+<p align="center"> <img src="http://img.shields.io/static/v1?label=STATUS_GERAL&message=RETORNAR_ASSUNTO&color=RED&style=for-the-badge" #vitrinedev/> </p>
 
 # ALURAKUT
 App apresenta o clone de Orkut.
