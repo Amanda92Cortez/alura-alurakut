@@ -5,7 +5,7 @@
 <h1>Alurakut - Alura</h1>
 
 # :pushpin: Formações/Cursos/Imersões
-- ` Item ` Imersão React  (Alura)
+- ` Observação ` Imersão React  (Alura)
 
 # :pushpin: Sobre do projeto
 - ` Observação ` Projeto desenvolvido durante a 3ª edição da Imersão React promovida pela Alura do ano 2021
