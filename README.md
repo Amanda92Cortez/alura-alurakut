@@ -28,7 +28,7 @@ Você pode [acessar o código fonte do projeto inicial](https://github.com/Amand
 ## 🛠️ Abrir e rodar o projeto
 Baixar projeto:
 - ` Baixar projeto ` git clone https://github.com/Amanda92Cortez/alura-alurakut.git
-ARRUMAR ABAIXO, POIS VOU REVER VÍDEO PRA ANOTAR E COMO UTILIZAR APP
+- ` Executar projeto ` ARRUMAR ABAIXO, POIS VOU REVER VÍDEO PRA ANOTAR E COMO UTILIZAR APP
 
 ## 🔎 Observações
 - [ ] Revisar vídeo
