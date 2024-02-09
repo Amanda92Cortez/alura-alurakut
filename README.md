@@ -26,7 +26,6 @@ Tela de detalhes
 Você pode [acessar o código fonte do projeto inicial](https://github.com/Amanda92Cortez/alura-alurakut) ou [baixá-lo](https://github.com/Amanda92Cortez/alura-alurakut/archive/refs/heads/main.zip).
 
 ## 🛠️ Abrir e rodar o projeto
-Baixar projeto:
 - ` Baixar projeto ` git clone https://github.com/Amanda92Cortez/alura-alurakut.git
 - ` Executar projeto ` ARRUMAR ABAIXO, POIS VOU REVER VÍDEO PRA ANOTAR E COMO UTILIZAR APP
 
