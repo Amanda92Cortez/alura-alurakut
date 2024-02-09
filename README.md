@@ -5,13 +5,13 @@
 <h1>Alurakut - Alura</h1>
 
 # :pushpin: Formações/Cursos/Imersões
-- `Item ` Imersão React  (Alura)
+- ` Item ` Imersão React  (Alura)
 
 # :pushpin: Sobre do projeto
-- `Observação ` Projeto desenvolvido durante a 3ª edição da Imersão React promovida pela Alura do ano 2021
+- ` Observação ` Projeto desenvolvido durante a 3ª edição da Imersão React promovida pela Alura do ano 2021
 
 # :hammer: Funcionalidades do projeto
-- `Funcionalidade ` Alurakut pra entrar conta GitHub
+- ` Funcionalidade ` Alurakut pra entrar conta GitHub
 
 # :bookmark_tabs: Tecnologias
 ![React](https://img.shields.io/badge/React-414141?style=for-the-badge&logo=react&logoColor=61DAFB)
@@ -20,7 +20,7 @@
 ![VSCode](https://img.shields.io/badge/-VSCode-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
 ## 🛠️ Abrir e rodar o projeto
-- `Baixar projeto ` git clone https://github.com/Amanda92Cortez/alura-alurakut.git
+- ` Baixar projeto ` git clone https://github.com/Amanda92Cortez/alura-alurakut.git
 
 ## 📚Telas/Vídeos
 ![image](https://user-images.githubusercontent.com/19363871/125538019-800acebc-8889-4a8d-84d9-48a0980fb6f9.png)
