@@ -1,5 +1,5 @@
 <p align="center">
-   <img src="http://img.shields.io/static/v1?label=STATUS&message=FINALIZADA&color=RED&style=for-the-badge" #vitrinedev/>
+   <img src="http://img.shields.io/static/v1?label=STATUS_GERAL&message=FINALIZADA&color=RED&style=for-the-badge" #vitrinedev/>
 </p>
 
 <h1>Alurakut - Alura</h1>
