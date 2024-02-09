@@ -1,6 +1,4 @@
 <p align="center"> <img src="http://img.shields.io/static/v1?label=STATUS_GERAL&message=FINALIZADA&color=RED&style=for-the-badge" #vitrinedev/> </p>
-</br>
-<p align="center"> <img src="http://img.shields.io/static/v1?label=OBSERVACAO&message=REVER_VIDEO_AJUSTE&color=RED&style=for-the-badge" #vitrinedev/> </p>
 
 <h1>Alurakut - Alura</h1>
 
@@ -24,3 +22,6 @@
 
 ## 📚Telas/Vídeos
 ![image](https://user-images.githubusercontent.com/19363871/125538019-800acebc-8889-4a8d-84d9-48a0980fb6f9.png)
+
+</br>
+<p align="center"> <img src="http://img.shields.io/static/v1?label=OBSERVACAO&message=REVER_VIDEO_AJUSTE&color=RED&style=for-the-badge" #vitrinedev/> </p>
