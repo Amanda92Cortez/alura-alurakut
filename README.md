@@ -31,4 +31,6 @@ Baixar projeto:
 ARRUMAR ABAIXO, POIS VOU REVER VÍDEO PRA ANOTAR E COMO UTILIZAR APP
 
 ## 🔎 Observações
-<p align="center"> <img src="http://img.shields.io/static/v1?label=OBSERVACAO&message=REVER_VIDEO&color=RED&style=for-the-badge" #vitrinedev/> </p>
+- [ ] Revisar vídeo
+- [ ] Ajustar a ideia
+- [ ] Finalizado
