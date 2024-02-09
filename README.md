@@ -32,5 +32,6 @@ ARRUMAR ABAIXO, POIS VOU REVER VÍDEO PRA ANOTAR E COMO UTILIZAR APP
 
 ## 🔎 Observações
 - [ ] Revisar vídeo
+- [ ] Colocar Gif rápido
 - [ ] Ajustar a ideia
 - [ ] Finalizado
