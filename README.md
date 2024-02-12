@@ -22,9 +22,6 @@ Tela de detalhes
 ## 📚Telas/Vídeos
 ![image](https://user-images.githubusercontent.com/19363871/125538019-800acebc-8889-4a8d-84d9-48a0980fb6f9.png)
 
-## 📁 Acesso ao projeto
-Você pode [acessar o código fonte do projeto inicial](https://github.com/Amanda92Cortez/alura-alurakut) ou [baixá-lo](https://github.com/Amanda92Cortez/alura-alurakut/archive/refs/heads/main.zip).
-
 ## 🛠️ Abrir e rodar o projeto
 - ` Baixar projeto ` git clone https://github.com/Amanda92Cortez/alura-alurakut.git
 - ` Executar projeto ` ARRUMAR ABAIXO, POIS VOU REVER VÍDEO PRA ANOTAR E COMO UTILIZAR APP
